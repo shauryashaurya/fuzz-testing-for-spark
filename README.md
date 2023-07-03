@@ -23,7 +23,7 @@ Fortunately, Spark has [a configuration](https://github.com/apache/spark/blob/8b
 This enables us to easily check output of non-optimized queries in an application side and
 this tester exploits it to detect optimizer anomalies.
 
-**This repository is work-in-progress; invalid SQL inputs for Spark SQL are generated many times (See [TODO](https://github.com/maropu/fuzz-testing-in-spark#todo)). To make them more meaningful, it needs to mutates SQL inputs based on [the Spark ANTLR grammar file](https://github.com/apache/spark/blob/master/sql/catalyst/src/main/antlr4/org/apache/spark/sql/catalyst/parser/SqlBase.g4).**
+**This repository is work-in-progress; invalid SQL inputs for Spark SQL are generated many times (See [TODO](https://github.com/maropu/fuzz-testing-in-spark#todo)). To make them more meaningful, it needs to mutates SQL inputs based on [the Spark ANTLR grammar files (Lexer-Parser)](sql/catalyst/src/main/antlr4/org/apache/spark/sql/catalyst/parser).**
 
 NOTE: A fuzz testing aaproach for Spark will be presented in the workshop on Testing Database Systems (DBTest'20) [5].
 
